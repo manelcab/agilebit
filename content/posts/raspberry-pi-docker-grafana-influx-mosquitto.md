@@ -75,8 +75,8 @@ If you have a gitlab repository with all your code, scripts, ... clone it in ord
 Install git client and configure your [personal token](https://docs.github.com/es/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
 
 ```
-git config --global user.name "manelcab"
-git config --global user.email "manelcab@gmail.com"
+git config --global user.name "username"
+git config --global user.email "mail@mail.com"
 ```
 
 If you want to avoid entering always the token you can follow these steps, but remember that this token will not be encrypted on you system
