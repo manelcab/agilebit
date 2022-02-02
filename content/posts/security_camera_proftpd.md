@@ -8,9 +8,9 @@ date: 2022-01-30T18:23:56.800Z
 featureImage: /uploads/proftp.png
 ---
 
-Hi all, in this post we are going to run [Proftpd](http://www.proftpd.org/) on docker and we'll configure a list of users authorized to use it.
+Hi all, in this post we are going to run [Proftpd](http://www.proftpd.org/) on docker with a list of users authorized to use it.
 
-If your security camera can be configured to send images/videos to a remote ftpserver, then we can use our raspberry to receive and save these files.
+If your security camera can be configured to send images/videos to a remote ftpserver, then we can use your Raspberry PI device to receive and save these files.
 
 This is the [git repo](https://github.com/kibatic/docker-proftpd) of the proftd server we'll use
 
@@ -18,7 +18,7 @@ These are the steps:
 
 ## 1. Create user files
 
-First of all create a new file and include a live with each user you want to configure, where the syntax is username:password, like this:
+First of all create a new file and include a new line with each user you want to configure, where the syntax is username:password, like this:
 
 ```
 cat /home/pi/config/ftpd/users.conf
@@ -27,10 +27,10 @@ username:password
 
 ## 2. Start PROFTP Daemon
 
-It is recommend that you use an usb pen drive to reduce the number of IOs of the raspberry SD card.
-In our case  our usb pen drive is mounted in /mnt/usb0/proftp.
+It is recommended that you use an usb pen drive to reduce the number of IOs of the raspberry SD card.
+In the current exeaple the usb pen drive is mounted in /mnt/usb0/proftp.
 
-Create first this directory with 777 permision in order to see which id is used by proftpd daemon. 
+First create this directory with 777 permisions in order to see which id is used by proftpd daemon. 
 ```
 sudo chmod 777 /mnt/usb0/proftp
 ```
