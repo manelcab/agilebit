@@ -8,22 +8,31 @@
     >
       <div class="field has-addons is-fullwidth">
         <p class="control has-icons-left">
-          <input
+          <!-- <input
             v-model="email"
             class="input"
             type="email"
             name="EMAIL"
-            placeholder="Email"
-          />
-          <span class="icon is-small is-left">
+            placeholder="EmailXXXXXXX"
+          /> -->
+          <!--
+            Esto es un icono
+          <span class="icon is-small is-left-asds">
             <font-awesome-icon icon="envelope" />
-            <i class="fas fa-envelope"></i>
+            <i class="fas fa-envelope-asds"></i>
           </span>
+          -->
         </p>
         <div class="control">
-          <button type="submit" class="button is-primary">
-            {{ $siteConfig.newsletter.btnText || 'Subscribe' }}
-          </button>
+          <p>
+            By using our website you agree to our use of cookies
+          </p>
+          <!--
+            Esto es el botón de ok
+           <button type="button" class="button is-primary">
+             {{ $siteConfig.newsletter.btnText || 'Subscribe' }}
+           </button>
+          -->
         </div>
       </div>
     </form>

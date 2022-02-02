@@ -28,7 +28,8 @@ export default {
       html = this.useResponsiveImages(html)
       html = this.wrapTable(html)
       html = html.replace(/<table>/g, '<table class="table is-striped">')
-
+      html = html.replace(/<a href="https:\/\//g, '_kko_') // En una solo linea (por larga?) da error :()
+      html = html.replace(/_kko_/g, '<a target="_blank" href="https://')
       return `<div class="content">${html}</div>`
     }
   },
@@ -37,30 +38,22 @@ export default {
       const images = html.match(/<img(.*?)>/g)
       if (images) {
         images.forEach((image) => {
+          // const generatedImage = require('~/assets')
           const origImage = image
             .match(/src="([^"]*)"/g)[0]
             .replace('src="', '')
             .replace('"', '')
           let replace = `src="${origImage}"`
-          const generatedImage =
-            origImage.startsWith('http') || origImage.endsWith('.gif')
-              ? origImage
-              : require(`~/assets${origImage}`)
-
-          if (typeof generatedImage === 'string') {
-            if (origImage.startsWith('/')) replace = `src="${generatedImage}"`
-            html = html.replace(image, image.replace(/src="([^"]*)"/g, replace))
-          } else {
-            if (origImage.startsWith('/')) {
-              replace = `src="${generatedImage.src}" srcset="${generatedImage.srcSet}"`
-            }
-
-            const optiImage = image
-              .replace('<img', '<opti-image')
-              .replace('>', '/>')
-              .replace(/src="([^"]*)"/g, replace)
-            html = html.replace(image, optiImage)
+          if (origImage.startsWith('/')) {
+            const generatedImage = require(`~/assets${origImage}`)
+            replace = `src="${generatedImage.src}" srcset="${generatedImage.srcSet}"`
           }
+
+          const optiImage = image
+            .replace('<img', '<opti-image')
+            .replace('>', '/>')
+            .replace(/src="([^"]*)"/g, replace)
+          html = html.replace(image, optiImage)
         })
       }
       return html

@@ -15,12 +15,14 @@
           {{ subtitle }}
         </h2>
         <br />
+        <!--
         <div
           v-if="$slots.default"
           class="under-subtitle animated fadeInDown slower"
         >
           <slot />
         </div>
+        -->
       </div>
     </div>
   </section>
@@ -153,5 +155,22 @@ export default {
   .under-subtitle strong {
     text-shadow: 1px 1px 2px white;
   }
+}
+.seperator h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1em;
+}
+.seperator h5::before,
+.seperator h5::after {
+  content: '';
+  display: block;
+  flex-grow: 1;
+  height: 1px;
+  background: #ccc;
+}
+.seperator h5 span {
+  padding: 0 2em;
 }
 </style>

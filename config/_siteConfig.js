@@ -9,9 +9,9 @@ import theCMS from '../cms/netlify/cms'
  * General Site configurations
  */
 export default {
-  siteName: 'Awake',
-  tagline: 'A Nuxt.js Theme for Netlify CMS',
-  featureImage: '/uploads/home-hero.jpg',
+  siteName: 'AgileBit',
+  tagline: 'Electronics, 3D printing, containers and amazing maker topics ...',
+  featureImage: '/uploads/rohit-tandon-9wg5jCEPBsw-unsplash.jpg',
   logo: 'logo-component', // 'logo-component', // or '/logo.svg' for regular image
   googleAnalytics: {
     on: true,
@@ -22,24 +22,24 @@ export default {
       name: 'About',
       link: '/about'
     },
-    {
+    /* {
       name: 'Contact',
       link: '/contact'
-    },
+    }, */
     {
       name: 'Categories',
       link: '/categories'
-    },
-    {
-      name: 'Github Repo',
-      link: 'https://github.com/danielkellyio/awake-template',
-      target: '_blank'
-    },
-    {
-      name: 'Awake+ Premium',
-      link: 'https://awake-premium-lp.netlify.com/',
-      target: '_blank'
     }
+    /* {
+      name: 'Github Repo',
+      link: 'https://github.com/',
+      target: '_blank'
+    } /* ,
+     {
+       name: 'Awake+ Premium',
+       link: 'https://awake-premium-lp.netlify.com/',
+       target: '_blank'
+     } */
   ],
   hero: {
     theme: 'dark' // options: mist, light, dark
@@ -61,18 +61,20 @@ export default {
   disqus: {
     on: true,
     loadingStrategy: 'button', // Options: onload, lazy, button
-    siteShortName: 'blog-danielkelly-io' // 'blog-danielkelly-io'
+    siteShortName: 'provadisqus' // 'blog-danielkelly-io'
   },
 
+  // siteShortName: 'blog-danielkelly-io' // 'blog-danielkelly-io'
   // Newsletter Subscribe
   newsletter: {
     on: true,
-    heading: 'Subscribe to Our Newsletter',
-    btnText: 'Subscribe',
+    // heading: 'By using our website you agree to our use of cookies to deliver a better site experience',
+    heading: 'This site use cookies',
+    btnText: 'Ok',
     // Can be the form action on a mail chimp form, a hubspot form,
     // or any other url you want to post the form data to
     mailchimp: {
-      on: true,
+      on: false,
       formAction:
         'https://danielkelly.us3.list-manage.com/subscribe/post?u=d3c2e762b66a2353d0bc29bf3&amp;id=2abeaa06e0'
     },

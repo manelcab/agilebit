@@ -1,0 +1,14 @@
+<svg height="500" width="450">
+<path id="lineAB" d="M 10 35 l 15 -30" stroke="red" stroke-width="3" fill="none" />
+  <path id="lineBC" d="M 25 5 l 15 30" stroke="red" stroke-width="3" fill="none" />
+  <path d="M 17 20 l 15 0" stroke="green" stroke-width="3" fill="none" />
+  <path d="M 10 35 q 15 -30 30 0" stroke="blue" stroke-width="1" fill="none" />
+  <!-- Mark relevant points -->
+  <g stroke="black" stroke-width="3" fill="black">
+    <circle id="pointA" cx="10" cy="35" r="3" />
+    <circle id="pointB" cx="25" cy="5" r="3" />
+    <circle id="pointC" cx="40" cy="35" r="3" />
+  </g>
+
+  Sorry, your browser does not support inline SVG.
+</svg>
