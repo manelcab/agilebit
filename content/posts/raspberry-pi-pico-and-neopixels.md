@@ -162,7 +162,7 @@ while True:
 ![demo_neo](/uploads/demo_neo.jpg)
 
 
-## Nex steps
+## Next steps
 
 Some next steps that can be implemented:
 - Use neopixel and FastLED libraries
