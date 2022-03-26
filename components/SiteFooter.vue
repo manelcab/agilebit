@@ -15,6 +15,8 @@
     <a href="" @click="gotomyUrl()"> Everest </a>
     <br />
     <a href="" @click="gotomyAwake()"> Thanks to awake template</a>
+    <br />
+    This site is only for educational and entertainment purposes, thanks ;)
   </footer>
 </template>
 
