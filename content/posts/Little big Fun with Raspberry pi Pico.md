@@ -10,7 +10,7 @@ featureImage: /uploads/fan.jpg
 
 Hi all, in this post we are going to build a "mini" fan where we can adjust the speed motor and show visuals effects by neopixels (WS2812b).
 
-In the following [post](https://www.agilebit.io/raspberry-pi-pico-and-neopixels) there are more information about how to manage newpixels
+In the following [post](https://www.agilebit.io/raspberry-pi-pico-and-neopixels) there are more information about how to manage neopixels
 
 The fan will have the following controls:
 - General switch
@@ -24,9 +24,6 @@ The normal/turbo switch connects the fan motor to the driver motor or directly t
 There are twelve WS2912b leds around the fan controlled by the raspberry pi Pico, by using the function button you can switch the several visual effects of them
 
 
-
-
-These are the steps:
 
 ## 1. Components
 
@@ -62,7 +59,7 @@ It is possible also to control the motor direction, although in this case the re
 The ULT pin has to be connected to Power to disable the sleep mode.
 
 # Visual effects
-The led brightness has been reduced to 0.04, with this valur it is comfortable to see.
+The led brightness has been reduced to 0.04, it is comfortable to see with this value.
 
 
 ## 3. Code

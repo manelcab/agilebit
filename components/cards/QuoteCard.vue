@@ -12,7 +12,7 @@
       <div class="card-footer-item">
         <span>
           Share on
-          <a href="https://twitter.com/Lenambac_" target="_blank">Twitter</a>
+          <a href="https://twitter.com/Lenambac" target="_blank">Twitter</a>
         </span>
       </div>
       <!--
