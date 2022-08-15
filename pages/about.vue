@@ -20,7 +20,8 @@
             methodologies, Management 3.0, ... Currently researching the world
             of cryto, NFTs, DEX, Blockchain, ... and whatever comes next.
             <br />
-            Thank you for visiting my blog, if you want to contact me @Lenambac
+            Thank you for visiting my blog, if you want to contact me on twitter
+            <a href="https://twitter.com/agilebit" target="_blank">Twitter</a>
           </p>
           <quote-card />
         </div>
