@@ -10,9 +10,11 @@
         <div class="content">
           <h3>Hi .... ;)</h3>
           <p>
+            I use this blog to keep track of my personal projects.<br />
             I am a curious mind, I like to discover, understand how it works,
-            connect the dots, try and learn. At the beginning discovering the
-            exciting world of electronics, then diving between
+            disassemble and see how it works, connect the dots, try and learn.
+            At the beginning discovering the exciting world of electronics,
+            playing and destroying LEDs ;),then diving between
             telecommunications and computing, looking for ways to link
             technologies, IOT, kubernetes, maker, lora, frontend and backend
             development, 3D printing, mqtt, etc... . Enjoying devices like
