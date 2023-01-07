@@ -41,7 +41,11 @@ noipv6
 Update the {IP_number} with a number of your choice between 2 and 254.
 It is recommended that you configure your DHCP Server (usually on your router) in order to indicate that this IP adress is static and avoid IP duplication errors on your network. 
 
+In case you want to configure ssh key between your laptop/pc and raspberry you can use the following command to configure authorized_keys on raspbnerry:
 
+```
+ssh-copy-id -i /home/{USER}/.ssh/{your-public-key} pi@{pi_adress}
+```
 
 ## 2. Docker installation
 
